@@ -1,0 +1,96 @@
+{
+  "name": "Hentai Streams",
+  "version": "0.1.0",
+  "author": "h97667611-dotcom",
+  "description": "Adult anime catalog adapters for Nuvio. Sources are disabled until authorized metadata/stream endpoints are verified.",
+  "scrapers": [
+    {
+      "id": "hanime",
+      "name": "Hanime.tv",
+      "description": "Hanime source adapter; currently catalog-only scaffold, no stream extraction.",
+      "version": "0.1.0",
+      "author": "Hentai-Nuvio",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "fileName": "providers/hanime.js",
+      "enabled": false,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "",
+      "contentLanguage": [
+        "en"
+      ],
+      "limited": true
+    },
+    {
+      "id": "hentaihaven",
+      "name": "HentaiHaven",
+      "description": "HentaiHaven source adapter; currently catalog-only scaffold, no stream extraction.",
+      "version": "0.1.0",
+      "author": "Hentai-Nuvio",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "fileName": "providers/hentaihaven.js",
+      "enabled": false,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "",
+      "contentLanguage": [
+        "en"
+      ],
+      "limited": true
+    },
+    {
+      "id": "hanimered",
+      "name": "Hanime.red",
+      "description": "Additional adult anime source adapter placeholder.",
+      "version": "0.1.0",
+      "author": "Hentai-Nuvio",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "fileName": "providers/hanime-red.js",
+      "enabled": false,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "",
+      "contentLanguage": [
+        "en"
+      ],
+      "limited": true
+    },
+    {
+      "id": "ahentaitv",
+      "name": "A-Hentai TV",
+      "description": "Additional adult anime source adapter placeholder.",
+      "version": "0.1.0",
+      "author": "Hentai-Nuvio",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "fileName": "providers/a-hentai-tv.js",
+      "enabled": false,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "",
+      "contentLanguage": [
+        "en"
+      ],
+      "limited": true
+    }
+  ]
+}
