@@ -1,4 +1,3 @@
-// A-Hentai TV adapter scaffold. Enable only after verifying an authorized API.
-async function getStreams(_params) { return []; }
-function onSettings() { return []; }
-module.exports = { getStreams, onSettings };
+// Candidate-source placeholder. Site/API not verified; no requests made.
+async function search(){return [];} async function details(){return null;} async function getStreams(){return [];}
+module.exports={search,details,getStreams};

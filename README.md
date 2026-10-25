@@ -1,19 +1,16 @@
 # Hentai Streams — Nuvio
 
-Public Nuvio plugin scaffold for adult-anime source adapters.
+Metadata-only adapter scaffolds for adult anime sources.
 
 ## Sources
-- Hanime.tv
-- HentaiHaven
-- Hanime.red (candidate; availability not verified)
-- A-Hentai TV (candidate; availability not verified)
+- Hanime.tv: page-based metadata search/details adapter
+- HentaiHaven: page-based metadata search/details adapter
+- Hanime.red and A-Hentai TV: disabled placeholders; site/API not verified
 
-## Status
-This is a **scaffold**, not a working streaming scraper. The provider entries are disabled and return no streams. No video URLs are extracted. Source availability, legal rights, and Nuvio runtime compatibility have not been verified. Only integrate media endpoints that you own or are authorized to access.
+## Usage
+The adapters export `search(query)`, `details(url)`, and `getStreams()`. Search/details use public HTML pages and Open Graph metadata where present. They do not extract media/video URLs; `getStreams()` intentionally returns an empty list.
 
-## Install
-Add the raw manifest URL in Nuvio's plugin/source settings:
+## Important
+These functions are generic HTML heuristics, not verified against the current site DOM or Nuvio's exact provider contract. Site availability, robots/terms, age gates, and legal authorization must be checked before enabling. No login, paywall, DRM, CAPTCHA, or access controls are bypassed.
 
-`https://raw.githubusercontent.com/h97667611-dotcom/Hentai-Nuvio/main/manifest.json`
-
-See [Install](install.html).
+Install manifest: https://raw.githubusercontent.com/h97667611-dotcom/Hentai-Nuvio/main/manifest.json
